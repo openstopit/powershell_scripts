@@ -5,7 +5,8 @@ function Get-PasswordExpirationDate {
 
     if ($passwordExpireDate -eq $null) {
         return "Password does not expire."
-    } else {        
+    }
+    else {        
         $passwordExpireDateTime = [DateTime]$passwordExpireDate
         return $passwordExpireDateTime
     }
@@ -20,11 +21,13 @@ function Check-PasswordExpiration {
     if ($passwordExpirationDate -le $notificationDate) {
         $daysLeft = ($passwordExpirationDate - $today).Days
         if ($daysLeft -gt 0) {
-            return "Your password will expire in $daysLeft days!. hello"
-        } else {
+            return "Your password will expire in $daysLeft days!"
+        }
+        else {
             return "Your password has expired."
         }
-    } else {
+    }
+    else {
         return $null
     }
 }
