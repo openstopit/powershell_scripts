@@ -9,7 +9,7 @@
     Copy-Item "C:\users\user\Desktop\password_notification.ps1" -Destination "C:\ps_scripts"
 
 # Run Script in powershell:
-    powershell -ExecutionPolicy Bypass -File C:\ps_scripts\password_notification.ps1
+    powershell -ExecutionPolicy Bypass -File C:\ps_scripts\powershell_scripts\password_notification.ps1
 
 # create auto-run script on user login:
     Win + R
