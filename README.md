@@ -18,5 +18,5 @@
         Give your task a name and description
         Choose "When I log on" as the trigger
         Select "Start a program" as the action    
-        powershell.exe -ExecutionPolicy Bypass -File "C:\ps_scripts\password_notification.ps1"
+        powershell.exe -ExecutionPolicy Bypass -File "C:\ps_scripts\password_notification.ps1" -windowstyle hidden
     Finish
